@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Registration for new users
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-item>
+    <ion-label stacked>your display name or username</ion-label>
+    <ion-input type="text" [(ngModel)]= 'user.username'></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>your password</ion-label>
+    <ion-input type="password" [(ngModel)]= 'user.password'></ion-input>
+  </ion-item>
+
+<button ion-button block (click)=RegisterToDb()>Register!</button>
+
+</ion-list>
+
+  <button ion-button block (click)=CloseModal()>close</button>
+
+</ion-content>

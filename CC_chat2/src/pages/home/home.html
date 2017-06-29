@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="LoginBool">
+<button ion-button block (click)=Register()>New User?</button>
+<button ion-button block (click)=openLoginPanel()>Registered user login</button>
+</div>
+
+<div *ngIf="!LoginBool">
+  <ion-list inset>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" [(ngModel)]= 'user.username'></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]= 'user.password'></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)=Login()>Login!</button>
+  </ion-list>
+  </div>
+
+</ion-content>

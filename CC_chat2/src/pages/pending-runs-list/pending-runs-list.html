@@ -1,0 +1,21 @@
+<!--
+  Generated template for the PendingRunsListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>pendingRunsList</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!--fetched unique players for unique pending-runs-list and their status. Assign players corresponding status. Loop radio-button through each player -->
+<ion-content padding>
+  //display users status
+  <div *ngFor='let player in team'>
+ <ion-input type="radio" name="abc" [ngClass]="player.status ? 'toggle' : 'none'>
+
+</ion-content>

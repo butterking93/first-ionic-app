@@ -1,0 +1,30 @@
+page-pending-runs-list {
+  //create statusbar radio button display
+  .toggle:checked {
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(155, 155, 255, 0.2);
+  box-shadow: 0px 0px 3px 3px rgba(155, 155, 255, 0.2);
+  }
+  .toggle:after {
+    content: '';
+    text-shadow: 0 -1px 0 #bfbfbf;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: auto;
+
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+  }
+
+  .toggle:checked:after {
+    color: #85ada7;
+    text-shadow: 0 1px 0 #669991;
+
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(155, 155, 255, 0.2);
+  box-shadow: 0px 0px 1px 1px rgba(155, 155, 255, 0.2);
+
+  background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+}
